@@ -30,6 +30,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.btn_load_local_weex).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this, LocalWeexActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
 }
